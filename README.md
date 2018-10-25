@@ -2,7 +2,7 @@
 
 This package is perfect for asking the users of your command line interface to provide a certain kind of information that's needed for continuing with execution of the program.
 
-Although it's not a explicit requirement, the package works best when used in combination with [args](https://github.com/leo/args).
+Although it's not a explicit requirement, the package works best when used in combination with [args](https://www.npmjs.com/package/args).
 
 ## Usage
 
