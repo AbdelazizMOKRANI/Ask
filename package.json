@@ -1,0 +1,65 @@
+{
+  "name": "ask",
+  "version": "2.0.0",
+  "description": "Receive user input via command line",
+  "main": "dist/index.js",
+  "ava": {
+    "files": [
+      "test/*.js"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "default",
+    "parser": "babel-eslint"
+  },
+  "babel": {
+    "plugins": [
+      "add-module-exports",
+      "transform-es2015-modules-commonjs",
+      "transform-async-to-generator"
+    ]
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "gulp",
+    "prepublish": "gulp transpile",
+    "pretest": "gulp transpile",
+    "test": "ava && eslint src/** test/** *.js"
+  },
+  "repository": "leo/ask",
+  "keywords": [
+    "command",
+    "line",
+    "input",
+    "prompt",
+    "inquirer",
+    "ask",
+    "questions"
+  ],
+  "author": "leo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leo/ask/issues"
+  },
+  "homepage": "https://github.com/leo/ask#readme",
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "babel-eslint": "^6.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.10.3",
+    "babel-register": "^6.9.0",
+    "eslint": "^3.1.0",
+    "eslint-config-default": "^0.2.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-cached": "^1.1.0"
+  },
+  "dependencies": {
+    "camelcase": "^3.0.0",
+    "capitalize-first-letter": "^1.0.0",
+    "chalk": "^1.1.3"
+  }
+}
